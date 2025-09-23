@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hebe Solves | Escritora, investigadora y docente</title>
+    <link rel="stylesheet" href="css/header-hs.css" />
     <link rel="stylesheet" href="css/hebe.css" />
     <link rel="stylesheet" href="css/historias.css" />
     <link rel="stylesheet" href="css/home-contacto.css" />
@@ -12,9 +13,9 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header>
-      <nav id="menu" class="menu-hs">
-        <ul>
+    <header id="header-hs">
+      <!--       <nav>
+        <ul class="menu-hs">
           <li>
             <a href="#hebe"> Inicio </a>
           </li>
@@ -31,6 +32,19 @@
             <a href="#home-contacto"> Contacto </a>
           </li>
         </ul>
+      </nav> -->
+
+      <nav>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+        <label for="menu-toggle" class="hamburger-icon"></label>
+        <div class="menu-content">
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Acerca de</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </div>
       </nav>
     </header>
     <!-- 
