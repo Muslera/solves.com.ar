@@ -1,17 +1,6 @@
-/* general */
-*{
-    padding: 0;
-    margin: 0;
-}
-body{
-    font-size: 16px;
-}
-#hebe,
-#obras,
-#historias,
-#otras-obras,
-#home-contacto{
-    width: 100vw;
-    min-height: 100vh;
-    border: 1px solid black;
-}
+@import url(./general.css);
+@import url(./hebe.css);
+@import url(./historias.css);
+@import url(./home-contacto.css);
+@import url(./obras.css);
+@import url(./otras-obras.css);
