@@ -13,9 +13,9 @@
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
+    <header id="header-hs" class="main-header">
     <!-- copiado de https://juneikerc.com/es/code-blog/tutorials/menu-hamburguesa/
      para tener un menú que se colapse en celulares -->
-    <header id="header-hs" class="main-header">
       <a class="main-logo" href="#hebe">
         <strong>Hebe Solves</strong>
       </a>
@@ -40,30 +40,151 @@
        -->
     <main>
       <div id="hebe" class="hero-hs">
-        <div id="carouselExampleFade" class="carousel slide carousel-fade">
+        <div id="carouselExampleCaptions" class="carousel slide">
+          <!--
+Oculto los indicadores porque prefiero este diseño
+<div class="carousel-indicators">
+<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+</div>
+-->
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <div class="informacion">
+              <img
+                src="../assets/img/Hebe-Solves-escritora.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-block text-white text-start w-50">
+                <div class="carousel-caption-content">
+                  <h1>Hebe Solves</h1>
+                  <h5>
+                    Escritora argentina, docente, investigadora y artista
+                    visual.
+                  </h5>
+                  <blockquote class="blockquote">
+                    <p class="small">
+                      <em>
+                        "Escribir también es un acto de habla, solo que demorado
+                        en el tiempo, ya que uno de los dos que se comunican no
+                        está presente;[...]""
+                      </em>
+                    </p>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="../assets/img/Hebe-Solves-escritora.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-block text-white text-start w-50">
+                <div class="carousel-caption-content-long">
+                  <h2>El poema</h2>
+                  <p>
+                    Una mano en la otra
+                    <br />
+                    y en las dos un latido
+                    <br />
+                    que no se sabe
+                    <br />
+                    si viene de tu lado
+                    <br />
+                    o del mío.
+                    <br />
+                    De la misma manera
+                    <br />
+                    pasa con el poema.
+                    <br />
+                    Uno lo dice y el otro
+                    <br />
+                    diciéndolo se lo lleva.
+                    <br />
+                    Y no se sabe
+                    <br />
+                    de quién es
+                    <br />
+                    ni de dónde sale.
+                  </p>
+                  <em class="small">Por Hebe Solves</em>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="../assets/img/Hebe-Solves-escritora.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-block text-white text-start w-50">
+                <div class="carousel-caption-content-long">
+                  <h2>Un año</h2>
+                  <p class="small">
+                    Cuando llegó la primavera vi que los malvones habían florecido. Había flores rojas, violetas, color salmón optan rosadas y pálidas que casi podían pasar por blancas. Cada flor tenía muchos pétalos carnosos y yo los sacaba uno por uno. Parecían uñas. De un lado eran redondeados y del otro agudos y conservaban todavía la forma en punta y de color blanquecino que unía cada pétalo a la flor entera, cuando estaban en la planta. Con pequeños mordiscos para no rajar el pétalo sedoso, les iba dando la forma más adecuada y sacaba la parte blanca, que a veces quedaba como la raíz de la uña, eso que llaman luna. Después le ponía saliva a cada pétalo por el lado de atrás y me lo pegaba a una uña verdadera. Era como mi mamá. Pero mis uñas tenían un color luminoso y a la vez opaco, no había dos uñas del todo iguales y aquel color hasta tenía un perfume especial a planta recién cortada. Andaba con los dedos extendidos, cuidando que el viento no arrancara mis uñas nuevas. Caminaba por el fondo de la casa y me parecía que todos me estaban mirando: el sol, el viento, el nogal que nunca dio fruta, el cactus y su flor amarilla que pinchaba, el alambrado del gallinero y el del fondo, que daba a la casa vecina. También me miraba el perro, detrás del alambrado y los tomates que ya estaban crecidos.
+                  </p>
+<p>
+    
+-¡Ya vinieron las hormigas!- oí que decía mi abuela que venía por el caminito del fondo con u cuentón de ropa recién retorcida y lista para tender. -¡El año pasado pasó lo mismo y me dejaron renga todas las flores!
+                  </p>
+<p>
+Mientras rezongaba en voz alta, tendía una sábana y no me miraba como me miraban las cosas de alrededor.
+                  </p>
+<p>
+-¿El año pasado? -pensé. Y no pude recordar, aunque recordaba las flores del malvón como si las hubiera conocido de siempre. ¿Yo habría jugado a pintarme las uñas el año pasado? Entonces, un año es lo que va de una flor que recordamos a otra que vuelve a nacer, exactamente igual a la de nuestra memoria.
+                  </p>
+                  <em class="small">Por Hebe Solves</em>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
 
+        <div id="carouselExampleFade" class="carousel slide carousel-fade">
+          <div class="carousel-inner">
+            <div class="carousel-item active slide-01">
+              <div class="informacion">
                 <h1>Hebe Solves</h1>
                 <h2>Escritora argentina</h2>
                 <h3>1935 - 2009</h3>
                 <h4>Docente e investigadora pedagógica.</h4>
               </div>
-
-              <figure>
-                <img
-                  src="https://images.pexels.com/photos/31584270/pexels-photo-31584270.jpeg"
-                  class="d-block w-100"
-                  alt="..."
-                />
-              </figure>
             </div>
             <div class="carousel-item">
-              <img src="..." class="d-block w-100" alt="..." />
+              <div class="informacion">
+                <h1>Hebe Solves</h1>
+                <h2>Escritora argentina</h2>
+                <h3>1935 - 2009</h3>
+                <h4>Docente e investigadora pedagógica.</h4>
+              </div>
             </div>
             <div class="carousel-item">
-              <img src="..." class="d-block w-100" alt="..." />
+              <div class="informacion">
+                <h1>Hebe Solves</h1>
+                <h2>Escritora argentina</h2>
+                <h3>1935 - 2009</h3>
+                <h4>Docente e investigadora pedagógica.</h4>
+              </div>
             </div>
           </div>
           <button
