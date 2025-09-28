@@ -1,1 +1,25 @@
 /* sección #obras */
+.cards-hs {
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.cards-content-hs {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  gap: 20px;
+}
+.card-hs {
+  border: 1px dotted #e7a8ff;
+  padding: 1rem;
+  border-radius: 5px;
+}
+@media screen and (min-width: 768px) {
+  .cards-content-hs {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}

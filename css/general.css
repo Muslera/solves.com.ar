@@ -6,17 +6,6 @@
 body {
   font-size: 16px;
 }
-/* secciones */
-#obras,
-#historias,
-#otras-obras,
-#home-contacto {
-  min-height: 100vh;
-  border-bottom: 1px dotted blue;
-}
-#hebe {
-  height: 90vh;
-}
 /* header */
 /* copiado de https://juneikerc.com/es/code-blog/tutorials/menu-hamburguesa/
 para tener un menú que se colapse en celulares */
@@ -25,7 +14,7 @@ para tener un menú que se colapse en celulares */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: white;
+  background-color:rgb(243, 243, 243);
   padding: 0.4rem;
   width: 90vw;
 }
@@ -42,24 +31,24 @@ para tener un menú que se colapse en celulares */
   width: 100%;
   margin-left: -100%;
   transition: all 0.2s linear;
-  background-color: rgba(0, 0, 0, 0.7);
   z-index: 100;
 }
 .main-nav.show {
   margin-left: 0;
 }
 .nav-links {
-  background-color: rgb(250, 250, 250);
+  background-color:rgb(255, 127, 10);
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   width: 70%;
   height: 100%;
-  align-items: center;
-  justify-content: flex-start;
 }
 .link-item {
   margin-top: 2rem;
-  color: #444444;
+  color: rgb(243, 243, 243);
+
   text-decoration: none;
   font-weight: bold;
   position: relative;
@@ -67,7 +56,7 @@ para tener un menú que se colapse en celulares */
 .link-item::after {
   position: absolute;
   content: "";
-  background-color: black;
+  background-color: rgb(243, 243, 243);
   bottom: -5px;
   left: 0;
   width: 0%;
@@ -94,7 +83,7 @@ para tener un menú que se colapse en celulares */
   height: 4px;
   margin-bottom: 5px;
   position: relative;
-  background: #444444;
+  background:rgb(49, 49, 49);
   border-radius: 3px;
   transform-origin: 4px 0px;
   transition: all 0.2s linear;
@@ -102,19 +91,39 @@ para tener un menú que se colapse en celulares */
 .button-menu.close span {
   opacity: 1;
   transform: rotate(45deg) translate(0px, 0px);
-  background: #ffffff;
+  background:rgb(49, 49, 49);
 }
 .button-menu.close span:nth-child(2) {
-  transform: rotate(-45deg) translate(-8px, 5px);
+  transform: rotate(-45deg) translate(-9px, 6px);
 }
 .button-menu.close span:nth-child(3) {
   display: none;
 }
+
+
+
 @media (max-width: 480px) {
 }
-/* #menú colapsado hasta los 768px*/
-/* #menú horizontal a partir de los 768px*/
+
+
+
+  /* secciones */
+  #obras,
+  #historias,
+  #otras-obras,
+  #home-contacto {
+    display: flex;
+    padding: 3rem;
+  }
+/* 
+  Versión responsive: opcional, pero se recomienda encarecidamente para demostrar habilidades de diseño adaptativo. 
+  (Breakpoints recomendados:  360px, 768px, 1024px)
+
+   */
 @media screen and (min-width: 768px) {
+  /* #menú colapsado hasta los 768px*/
+  /* #menú horizontal a partir de los 768px*/
+
   .button-menu {
     display: none;
   }
@@ -135,13 +144,34 @@ para tener un menú que se colapse en celulares */
     flex-wrap: wrap;
     align-items: center;
     justify-content: flex-end;
-    background: white;
+    background:rgb(243, 243, 243);
   }
 
   .link-item {
     display: inline-block;
     margin-top: 0;
     margin-right: 2rem;
+  color: rgb(49, 49, 49);
+
+  }
+.link-item::after {
+  background-color:rgb(49, 49, 49);
+}
+
+
+}
+
+@media screen and (min-width: 1024px) {
+  /* secciones */
+  #obras,
+  #historias,
+  #otras-obras,
+  #home-contacto {
+    min-height: 100vh;
+    border-bottom: 1px dotted rgb(49, 49, 49);
+  }
+  #hebe {
+    height: 90vh;
   }
 }
 
@@ -154,8 +184,8 @@ para tener un menú que se colapse en celulares */
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
-  background-color: #555; /* Set a background color */
-  color: white; /* Text color */
+  background-color:rgb(255, 127, 10);
+  color: rgb(238, 238, 238); /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 15px; /* Some padding */
   border-radius: 10px; /* Rounded corners */
@@ -163,5 +193,5 @@ para tener un menú que se colapse en celulares */
 }
 
 #myBtn:hover {
-  background-color: #000; /* Add a darker background on hover */
+  background-color:rgb(49, 49, 49); /* Add a darker background on hover */
 }
