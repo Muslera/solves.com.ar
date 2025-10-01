@@ -3,10 +3,25 @@
   padding: 0;
   margin: 0;
 }
+/* Fonts */
 body {
-  color:rgb(49, 49, 49);
+  color: rgb(49, 49, 49);
   font-size: 16px;
+  font-family: "Special Elite", system-ui;
+  font-weight: 400;
+  font-style: normal;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Cutive", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 /* header */
 /* 
 Menú hamburguesa colapsable copiado de
@@ -16,13 +31,13 @@ Menú hamburguesa colapsable copiado de
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color:rgb(243, 243, 243);
+  background-color: rgb(243, 243, 243);
   height: 10vh;
   width: 100vw;
 }
 .main-logo {
-  color:rgb(49, 49, 49);
-  font-size: 2rem;
+  color: rgb(49, 49, 49);
+  font-size: 1.5rem;
   text-decoration: none;
   padding: 1rem;
 }
@@ -40,13 +55,10 @@ Menú hamburguesa colapsable copiado de
   margin-left: 0;
 }
 .nav-links {
-  /* background-color:rgb(255, 127, 10); */
-  background-color:rgb(136, 209, 93);
+  background-color: rgb(136, 209, 93);
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  width: 70%;
+  width: 50%;
   height: 100%;
 }
 .link-item {
@@ -54,10 +66,12 @@ Menú hamburguesa colapsable copiado de
   text-decoration: none;
   font-weight: bold;
   position: relative;
+  padding: 10px;
+  font-size: 1.5rem;
 }
 .link-item:hover {
-  background:rgb(63, 63, 63);
-  color:rgb(136, 209, 93);
+  background: rgb(63, 63, 63);
+  color: rgb(136, 209, 93);
 }
 .button-menu {
   margin-right: 1rem;
@@ -77,7 +91,7 @@ Menú hamburguesa colapsable copiado de
   height: 4px;
   margin-bottom: 5px;
   position: relative;
-  background:rgb(49, 49, 49);
+  background: rgb(49, 49, 49);
   border-radius: 3px;
   transform-origin: 4px 0px;
   transition: all 0.2s linear;
@@ -85,7 +99,7 @@ Menú hamburguesa colapsable copiado de
 .button-menu.close span {
   opacity: 1;
   transform: rotate(45deg) translate(0px, 0px);
-  background:rgb(49, 49, 49);
+  background: rgb(49, 49, 49);
 }
 .button-menu.close span:nth-child(2) {
   transform: rotate(-45deg) translate(-9px, 6px);
@@ -94,25 +108,25 @@ Menú hamburguesa colapsable copiado de
   display: none;
 }
 
+/* secciones */
+#obras,
+#otras-obras,
+#home-contacto,
+#footer {
+  display: flex;
+  padding: 3rem;
+  border-bottom: 1px dotted rgb(49, 49, 49);
+}
 
-
-
-
-  /* secciones */
-  #obras,
-  #historias,
-  #otras-obras,
-  #home-contacto,
-  #footer {
-    display: flex;
-    padding: 3rem;
-  }
+.footer-hs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 /* 
-  Versión responsive: opcional, pero se recomienda encarecidamente para demostrar habilidades de diseño adaptativo. 
-  (Breakpoints recomendados:  360px, 768px, 1024px)
-
-
-@media (max-width: 480px) {
+(Breakpoints recomendados:  360px, 768px, 1024px)
 }
    */
 @media screen and (min-width: 768px) {
@@ -125,6 +139,7 @@ Menú hamburguesa colapsable copiado de
 
   .main-logo {
     flex-basis: 30%;
+
   }
 
   .main-nav {
@@ -140,21 +155,18 @@ Menú hamburguesa colapsable copiado de
     flex-wrap: wrap;
     align-items: center;
     justify-content: flex-end;
-    background:rgb(243, 243, 243);
+    background: rgb(243, 243, 243);
   }
 
   .link-item {
     display: inline-block;
     margin-top: 0;
-    margin-right: 2rem;
-  color: rgb(49, 49, 49);
-
+    margin-right: 0.5rem;
+    color: rgb(49, 49, 49);
   }
-.link-item::after {
-  background-color:rgb(49, 49, 49);
-}
-
-
+  .link-item::after {
+    background-color: rgb(49, 49, 49);
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -176,7 +188,7 @@ Menú hamburguesa colapsable copiado de
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
-  background-color:#9CD167;
+  background-color: #9cd167;
   color: rgb(238, 238, 238); /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 15px; /* Some padding */
@@ -185,5 +197,5 @@ Menú hamburguesa colapsable copiado de
 }
 
 #myBtn:hover {
-  background-color:rgb(49, 49, 49); /* Add a darker background on hover */
+  background-color: rgb(49, 49, 49); /* Add a darker background on hover */
 }
