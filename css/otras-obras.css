@@ -1,24 +1,80 @@
 /* sección #otras-obras */
-
-.gallery-hs{
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+.gallery-hs {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
-.gallery-content-hs{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
-
+.gallery-content-hs {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
 }
-.gallery-item-hs{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 1rem;
-    
+.gallery-item-hs {
+  border: 1px dotted rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem;
+  width: 100%;
+}
+.poesia:hover {
+  background-color: rgb(136, 209, 93);
+  color: white;
+}
+.infantil:hover {
+  background-color: rgb(126, 55, 184);
+  color: white;
+}
+.ensayo:hover {
+    background-color: rgb(117, 119, 223);
+    color: white;
+}
+.canciones:hover {
+    background-color: rgb(245, 207, 38);
+  color: white;
+}
+.revistas:hover {
+  background-color: rgb(39, 122, 97);
+  color: white;
+}
+.eventos:hover {
+  background-color: rgb(196, 123, 15);
+  color: white;
+}
+.arte:hover {
+  background-color: rgb(63, 21, 97);
+  color: white;
+}
+.articulos:hover {
+  background-color: rgb(141, 132, 0);
+  color: white;
+}
+
+.poesia:hover,
+,
+.infantil:hover,
+.ensayo:hover,
+.canciones:hover,
+.revistas:hover,
+.eventos:hover,
+.arte:hover,
+.articulos:hover {
+  transition-duration: 0.005s;
+}
+
+@media screen and (min-width: 480px) {
+  .gallery-item-hs {
+    width: 40%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .gallery-item-hs {
+    width: auto;
+  }
 }

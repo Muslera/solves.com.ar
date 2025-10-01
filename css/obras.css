@@ -5,21 +5,42 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  gap: 1rem;
 }
 .cards-content-hs {
   display: flex;
   flex-direction: column;
-  width: 100vw;
-  gap: 20px;
+  width: 100%;
+  gap: 1rem;
 }
 .card-hs {
-  border: 1px dotted #e7a8ff;
+  border: 1px dotted rgba(0, 0, 0, 0.3);
   padding: 1rem;
   border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+.card-hs a {
+  color: inherit;
+  text-decoration: none;
+}
+.card-hs img {
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+.card-hs:hover {
+  background-color: rgb(136, 209, 93);
+  transition-duration: 0.005s;
+  color: white;
 }
 @media screen and (min-width: 768px) {
   .cards-content-hs {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
   }
 }

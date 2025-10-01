@@ -12,17 +12,10 @@
     top:0;
 }
 /* aplicando flex a los textos del carousel */
-.carousel-caption-content,
-.carousel-caption-content-long {
+.carousel-caption-content{
     top: 0;
 	height: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-}
-/* ajustando espacio para textos largos en el carousel */
-.carousel-caption-content-long {
-	justify-content: start;
-    margin-top: 6rem;
-
 }

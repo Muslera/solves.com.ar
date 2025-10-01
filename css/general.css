@@ -4,24 +4,27 @@
   margin: 0;
 }
 body {
+  color:rgb(49, 49, 49);
   font-size: 16px;
 }
 /* header */
-/* copiado de https://juneikerc.com/es/code-blog/tutorials/menu-hamburguesa/
-para tener un menú que se colapse en celulares */
+/* 
+Menú hamburguesa colapsable copiado de
+ https://juneikerc.com/es/code-blog/tutorials/menu-hamburguesa/ 
+ */
 .main-header {
-  height: 10vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color:rgb(243, 243, 243);
-  padding: 0.4rem;
-  width: 90vw;
+  height: 10vh;
+  width: 100vw;
 }
 .main-logo {
-  color: black;
-  font-size: 32px;
+  color:rgb(49, 49, 49);
+  font-size: 2rem;
   text-decoration: none;
+  padding: 1rem;
 }
 .main-nav {
   position: fixed;
@@ -37,7 +40,8 @@ para tener un menú que se colapse en celulares */
   margin-left: 0;
 }
 .nav-links {
-  background-color:rgb(255, 127, 10);
+  /* background-color:rgb(255, 127, 10); */
+  background-color:rgb(136, 209, 93);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -46,27 +50,17 @@ para tener un menú que se colapse en celulares */
   height: 100%;
 }
 .link-item {
-  margin-top: 2rem;
-  color: rgb(243, 243, 243);
-
+  color: rgb(63, 63, 63);
   text-decoration: none;
   font-weight: bold;
   position: relative;
 }
-.link-item::after {
-  position: absolute;
-  content: "";
-  background-color: rgb(243, 243, 243);
-  bottom: -5px;
-  left: 0;
-  width: 0%;
-  height: 3px;
-  transition: 0.3s ease all;
-}
-.link-item:hover::after {
-  width: 100%;
+.link-item:hover {
+  background:rgb(63, 63, 63);
+  color:rgb(136, 209, 93);
 }
 .button-menu {
+  margin-right: 1rem;
   z-index: 200;
   width: 40px;
   height: 40px;
@@ -102,16 +96,14 @@ para tener un menú que se colapse en celulares */
 
 
 
-@media (max-width: 480px) {
-}
-
 
 
   /* secciones */
   #obras,
   #historias,
   #otras-obras,
-  #home-contacto {
+  #home-contacto,
+  #footer {
     display: flex;
     padding: 3rem;
   }
@@ -119,6 +111,9 @@ para tener un menú que se colapse en celulares */
   Versión responsive: opcional, pero se recomienda encarecidamente para demostrar habilidades de diseño adaptativo. 
   (Breakpoints recomendados:  360px, 768px, 1024px)
 
+
+@media (max-width: 480px) {
+}
    */
 @media screen and (min-width: 768px) {
   /* #menú colapsado hasta los 768px*/
@@ -136,6 +131,7 @@ para tener un menú que se colapse en celulares */
     position: static;
     margin-left: 0;
     height: 100%;
+    width: 60%;
   }
 
   .nav-links {
@@ -167,11 +163,7 @@ para tener un menú que se colapse en celulares */
   #historias,
   #otras-obras,
   #home-contacto {
-    min-height: 100vh;
     border-bottom: 1px dotted rgb(49, 49, 49);
-  }
-  #hebe {
-    height: 90vh;
   }
 }
 
@@ -184,7 +176,7 @@ para tener un menú que se colapse en celulares */
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
-  background-color:rgb(255, 127, 10);
+  background-color:#9CD167;
   color: rgb(238, 238, 238); /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 15px; /* Some padding */
