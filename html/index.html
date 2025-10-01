@@ -34,8 +34,8 @@
       </h2>
       <nav id="nav" class="main-nav">
         <div class="nav-links">
-          <a class="link-item" href="#hebe">Inicio</a>
-          <a class="link-item" href="#obras">Destacadas</a>
+          <a class="link-item" href="#header-hs">Inicio</a>
+          <a class="link-item" href="#obras">Obras destacadas</a>
           <a class="link-item" href="#otras-obras">Obras</a>
           <a class="link-item" href="#home-contacto">Contacto</a>
         </div>
@@ -223,24 +223,34 @@ Oculto los indicadores porque prefiero este diseño
             <input type="email" name="email" id="email" />
             <label for="mensaje">Mensaje</label>
             <textarea name="mensaje" id="mensaje"></textarea>
-            
-                <div>
-                    <button class="enviar-hs" type="submit">Enviar <i class="fa-solid fa-check"></i></button>
-                    <button class="borrar-hs" type="reset" >Borrar <i class="fa-solid fa-trash-can"></i></button>
-                </div>
+
+            <div>
+              <button class="enviar-hs" type="submit">
+                Enviar <i class="fa-solid fa-check"></i>
+              </button>
+              <button class="borrar-hs" type="reset">
+                Borrar <i class="fa-solid fa-trash-can"></i>
+              </button>
+            </div>
           </form>
         </div>
       </div>
     </main>
-    <!-- 
-    
-    
-    
-       -->
     <footer id="footer" class="footer-hs">
-      <h5>Todos los derechos resevados - 2025</h5>
+      <div class="footer-hs-content-item">
+        <h4>Hebe Solves</h4>
+        <p>&copy; Derechos reservados - 2025</p>
+      </div>
+      <div class="footer-hs-content-item">
+        <a class="link-item" href="#header-hs">Inicio</a>
+        <a class="link-item" href="#obras">Obras destacadas</a>
+        <a class="link-item" href="#otras-obras">Obras</a>
+        <a class="link-item" href="#home-contacto">Contacto</a>
+      </div>
 
-      <button onclick="topFunction()" id="myBtn" title="Menú">Top</button>
+      <button onclick="topFunction()" id="myBtn" title="Menú">
+        <i class="bi bi-arrow-up-circle display-5"></i>
+      </button>
     </footer>
     <script src="../js/menu.js"></script>
     <script src="../js/scroll-to-top.js"></script>
