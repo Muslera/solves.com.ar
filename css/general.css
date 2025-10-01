@@ -118,7 +118,7 @@ Menú hamburguesa colapsable copiado de
   border-bottom: 1px dotted rgb(49, 49, 49);
 }
 .footer-hs {
-  background-color: rgb(9,9,9);
+  background-color: rgb(9, 9, 9);
   color: rgb(136, 209, 93);
   display: flex;
   flex-wrap: wrap;
@@ -133,12 +133,10 @@ Menú hamburguesa colapsable copiado de
 }
 .footer-hs-content-item h4 {
   padding-top: 10px;
-
 }
 .footer-hs-content-item a {
   color: rgb(243, 243, 243);
   padding: 5px;
-  
 }
 .footer-hs-content-item a:hover {
   color: rgb(136, 209, 93);
@@ -150,10 +148,10 @@ Menú hamburguesa colapsable copiado de
    */
 @media screen and (min-width: 480px) {
   .footer-hs {
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     gap: 3rem;
   }
-  }
+}
 @media screen and (min-width: 768px) {
   /* #menú colapsado hasta los 768px*/
   /* #menú horizontal a partir de los 768px*/

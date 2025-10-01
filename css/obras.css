@@ -41,10 +41,9 @@
 @media screen and (min-width: 768px) {
   .cards-content-hs {
     flex-direction: row;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
   }
-
-.card-hs  {
-  width: 33%;
-}
+  .card-hs {
+    width: 33%;
+  }
 }
