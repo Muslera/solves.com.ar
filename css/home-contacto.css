@@ -11,8 +11,41 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
+  align-items: start;
   gap: 1rem;
+}
+
+input {
+  padding: 6px;
+  border: none;
+  border-radius: 3px;
+  font-size: 1rem;
+}
+.enviar-hs,
+.borrar-hs {
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+.borrar-hs {
+  background-color: rgb(136, 209, 93);
+  color: rgb(49, 49, 49);
+  margin-left: 30px;
+}
+.enviar-hs {
+  background-color: rgb(117, 119, 223);
+}
+.enviar-hs {
+  color: white;
+}
+.enviar-hs:hover,
+.borrar-hs:hover {
+  background-color: rgb(9, 9, 9);
+}
+.borrar-hs:hover {
+  color: white;
 }
 
 @media screen and (min-width: 768px) {
